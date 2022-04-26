@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var myView : UIView!
     
 
+    @IBOutlet weak var viewGreen: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = ViewModel()

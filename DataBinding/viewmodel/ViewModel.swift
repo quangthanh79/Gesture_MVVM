@@ -14,13 +14,12 @@ class ViewModel: NSObject,ViewModelProtocol {
     var errorMessage: Observable<String?> = Observable(nil)
     var error: Observable<Bool> = Observable(false)
     func fetchUser() {
-        self.apiService.apiToGetUser { (data: Data?,URLResponse: URLResponse?,error: Error?) in
+        self.apiService.apiToGetUser{ (data: Data?,URLResponse: URLResponse?,error: Error?) in
                 if let Data = data {
                     let jsonDecoder = JSONDecoder()
                     let dataResponse = try! jsonDecoder.decode(User.self, from: Data) as User
                     self.userOb = Observable(dataResponse)
                 }
-            
         }
     }
 

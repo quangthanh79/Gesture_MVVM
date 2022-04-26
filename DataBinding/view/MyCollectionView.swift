@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyCollectionViewCell: UICollectionViewCell {
+class MyCollectionView: UICollectionViewCell {
     
     @IBOutlet weak var lblNumber: UILabel!
 }

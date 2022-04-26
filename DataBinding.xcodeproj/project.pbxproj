@@ -18,6 +18,12 @@
 		8931885427E4252F00A98505 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931885327E4252F00A98505 /* ViewModel.swift */; };
 		8931885727E426EB00A98505 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931885627E426EB00A98505 /* APIService.swift */; };
 		8931885927E42B4C00A98505 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931885827E42B4C00A98505 /* Observable.swift */; };
+		89348C6B27E87D0300149A60 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89348C6A27E87D0300149A60 /* CollectionViewController.swift */; };
+		89348C7127E8895F00149A60 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89348C6F27E8895F00149A60 /* MyCollectionViewCell.xib */; };
+		89348C7727E9AEE500149A60 /* MyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89348C7627E9AEE500149A60 /* MyCollectionView.swift */; };
+		894DDF1027F5494D009FDE68 /* NewImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894DDF0F27F5494D009FDE68 /* NewImageController.swift */; };
+		896B74F227EC1E86001684C4 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B74F127EC1E86001684C4 /* ImageViewController.swift */; };
+		896B74F527EC2CD6001684C4 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B74F427EC2CD6001684C4 /* ColorExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		8931885327E4252F00A98505 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8931885627E426EB00A98505 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		8931885827E42B4C00A98505 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		89348C6A27E87D0300149A60 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		89348C6F27E8895F00149A60 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		89348C7627E9AEE500149A60 /* MyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionView.swift; sourceTree = "<group>"; };
+		894DDF0F27F5494D009FDE68 /* NewImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewImageController.swift; sourceTree = "<group>"; };
+		896B74F127EC1E86001684C4 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		896B74F427EC2CD6001684C4 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 		8931883027E4164600A98505 /* DataBinding */ = {
 			isa = PBXGroup;
 			children = (
+				896B74F327EC2CB8001684C4 /* Ext */,
 				8931885527E426DC00A98505 /* API */,
 				8931884E27E4213E00A98505 /* protocol */,
 				8931884D27E4212300A98505 /* view */,
@@ -102,6 +115,11 @@
 			isa = PBXGroup;
 			children = (
 				8931883527E4164600A98505 /* ViewController.swift */,
+				89348C6A27E87D0300149A60 /* CollectionViewController.swift */,
+				89348C6F27E8895F00149A60 /* MyCollectionViewCell.xib */,
+				89348C7627E9AEE500149A60 /* MyCollectionView.swift */,
+				896B74F127EC1E86001684C4 /* ImageViewController.swift */,
+				894DDF0F27F5494D009FDE68 /* NewImageController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -120,6 +138,14 @@
 				8931885627E426EB00A98505 /* APIService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		896B74F327EC2CB8001684C4 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				896B74F427EC2CD6001684C4 /* ColorExt.swift */,
+			);
+			path = Ext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +208,7 @@
 			files = (
 				8931883E27E4164700A98505 /* LaunchScreen.storyboard in Resources */,
 				8931883B27E4164700A98505 /* Assets.xcassets in Resources */,
+				89348C7127E8895F00149A60 /* MyCollectionViewCell.xib in Resources */,
 				8931883927E4164600A98505 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,13 +220,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89348C6B27E87D0300149A60 /* CollectionViewController.swift in Sources */,
+				894DDF1027F5494D009FDE68 /* NewImageController.swift in Sources */,
+				896B74F527EC2CD6001684C4 /* ColorExt.swift in Sources */,
 				8931885927E42B4C00A98505 /* Observable.swift in Sources */,
 				8931885027E4216800A98505 /* ViewModelProtocol.swift in Sources */,
 				8931884B27E420C400A98505 /* User.swift in Sources */,
 				8931883627E4164600A98505 /* ViewController.swift in Sources */,
 				8931883227E4164600A98505 /* AppDelegate.swift in Sources */,
+				89348C7727E9AEE500149A60 /* MyCollectionView.swift in Sources */,
 				8931885427E4252F00A98505 /* ViewModel.swift in Sources */,
 				8931885727E426EB00A98505 /* APIService.swift in Sources */,
+				896B74F227EC1E86001684C4 /* ImageViewController.swift in Sources */,
 				8931883427E4164600A98505 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
